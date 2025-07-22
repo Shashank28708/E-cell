@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Cell | Tula's Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-blue: #1E40AF;
+      --accent-orange: #F97316;
+      --accent-green: #10B981;
+      --neutral-white: #FFFFFF;
+      --neutral-light-gray: #F3F4F6;
+      --neutral-dark-gray: #111827;
+    }
+  </style>
+</head>
+<body class="bg-[var(--neutral-white)] text-gray-900 scroll-smooth">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-500 opacity-0 -translate-y-6 border-rounded ">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-2 pl-4 ">
+        <img src="logo.png" alt="E-Cell Logo" class="w-12 h-12 text-blue "/>
+       
+      </div>
+      <button id="nav-toggle" class="md:hidden text-3xl focus:outline-none" aria-label="Open Menu">
+        <span>&#9776;</span>
+      </button>
+      <ul id="nav-menu" class="hidden md:flex gap-8 items-center font-semibold text-[var(--primary-blue)] pr-6 ">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Mobile Menu -->
+    <ul id="nav-mobile" class="md:hidden hidden flex-col gap-4 bg-[var(--neutral-white)] px-4 pb-4 font-semibold text-[var(--primary-blue)] shadow-md">
+      <li><a href="#" class="nav-link block py-2">Home</a></li>
+      <li><a href="#about" class="nav-link block py-2">About</a></li>
+      <li><a href="#team" class="nav-link block py-2">Team</a></li>
+      <li><a href="#gallery" class="nav-link block py-2">Gallery</a></li>
+      <li><a href="#faq" class="nav-link block py-2">FAQ</a></li>
+      <li><a href="#contact" class="nav-link block py-2">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative flex items-center justify-center min-h-screen bg-[var(--primary-blue)] text-[var(--neutral-white)] overflow-hidden pt-20 px-4 md:px-8">
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1500&q=80');"></div>
+    <div class="relative z-10 flex flex-col items-center text-center animate-fadeIn">
+      <h1 class="text-4xl md:text-6xl font-bold font-sans mb-4" style="font-family: 'Montserrat', 'Poppins', sans-serif;">
+        Launch Your Startup Journey with Tula's Institute of Technology and Management E-Cell
+      </h1>
+      <p class="text-lg md:text-2xl mb-8 max-w-xl">
+        Empowering students to innovate and build tomorrow's startups.
+      </p>
+      <a href="#contact" class="cta-button px-8 py-3 rounded-full font-semibold text-lg shadow-lg transition hover:scale-105" style="background-color: var(--accent-orange); color: var(--neutral-white);">
+        Join Us
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-bg py-16 px-4 md:px-8">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4 text-[var(--primary-blue)]">About E-Cell</h2>
+        <p class="mb-6">
+          The <span class="text-black-500 font-bold">Tula's Institute</span> Entrepreneurship Cell (E-Cell) is dedicated to fostering a culture of innovation and entrepreneurship on campus. We empower students to transform ideas into impactful startups through mentorship, workshops, and networking opportunities. Our mission is to support aspiring entrepreneurs at every stage, from ideation to launch, and to build a vibrant startup ecosystem within our college community.
+        </p>
+        <div class="flex gap-8 mb-4">
+          <div class="flex flex-col items-center">
+            <span class="text-2xl font-bold accent-icon" style="color: var(--accent-green);">20+</span>
+            <span class="text-sm">Startups Mentored</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-2xl font-bold accent-icon" style="color: var(--accent-green);">5</span>
+            <span class="text-sm">National Hackathons</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-2xl font-bold accent-icon" style="color: var(--accent-green);">50+</span>
+            <span class="text-sm">Events Hosted</span>
+          </div>
+        </div>
+        <p class="italic text-[var(--primary-blue)] font-semibold">Vision: Building the next generation of innovators.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="E-Cell Event" class="rounded-xl shadow-lg w-full max-w-md"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-16 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-[var(--primary-blue)]">Meet the Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+        <!-- Team Member -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-[var(--accent-green)]"/>
+          <h3 class="font-bold text-lg">Priya Sharma</h3>
+          <p class="text-sm text-gray-600 mb-2">Event Lead</p>
+          <p class="text-xs text-center">Passionate about startup ecosystems and building communities.</p>
+          <a href="#" class="mt-2 text-[var(--primary-blue)] hover:underline text-sm">LinkedIn</a>
+        </div>
+        <!-- Repeat for other team members -->
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amit" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-[var(--accent-green)]"/>
+          <h3 class="font-bold text-lg">Amit Verma</h3>
+          <p class="text-sm text-gray-600 mb-2">President</p>
+          <p class="text-xs text-center">Leading the E-Cell to new heights of innovation.</p>
+          <a href="#" class="mt-2 text-[var(--primary-blue)] hover:underline text-sm">LinkedIn</a>
+        </div>
+        <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sara" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-[var(--accent-green)]"/>
+          <h3 class="font-bold text-lg">Sara Khan</h3>
+          <p class="text-sm text-gray-600 mb-2">Marketing Lead</p>
+          <p class="text-xs text-center">Spreading the word and growing our community.</p>
+          <a href="#" class="mt-2 text-[var(--primary-blue)] hover:underline text-sm">LinkedIn</a>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section-bg py-16 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-[var(--primary-blue)]">Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="relative group overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Startup Bootcamp 2024" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"/>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2 opacity-0 group-hover:opacity-100 transition">Startup Bootcamp 2024</div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-md">
+          <img src="IMG_0167.JPG" alt="Hackathon" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"/>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2 opacity-0 group-hover:opacity-100 transition">National Hackathon</div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Pitch Competition" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"/>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2 opacity-0 group-hover:opacity-100 transition">Pitch Competition</div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Guest Talk" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"/>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2 opacity-0 group-hover:opacity-100 transition">Guest Talk</div>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="#" class="text-[var(--accent-orange)] hover:underline">See more on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 px-4 md:px-8" style="background-color: #E8ECEF;">
+    <div class="container mx-auto max-w-2xl">
+      <h2 class="text-3xl font-bold mb-8 text-center text-[var(--primary-blue)]">Frequently Asked Questions</h2>
+      <div id="faq-accordion">
+        <!-- FAQ Item -->
+        <div class="mb-4 border-b">
+          <button class="w-full text-left py-4 font-semibold text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq(0)">
+            What is the E-Cell?
+            <span id="faq-icon-0">+</span>
+          </button>
+          <div class="faq-answer hidden pb-4 pl-2 text-gray-700">
+            A student-run body to promote entrepreneurship at [College Name].
+          </div>
+        </div>
+        <div class="mb-4 border-b">
+          <button class="w-full text-left py-4 font-semibold text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq(1)">
+            How can I join the E-Cell?
+            <span id="faq-icon-1">+</span>
+          </button>
+          <div class="faq-answer hidden pb-4 pl-2 text-gray-700">
+            Fill out the form in the Contact section or join our WhatsApp group.
+          </div>
+        </div>
+        <div class="mb-4 border-b">
+          <button class="w-full text-left py-4 font-semibold text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq(2)">
+            What events do you organize?
+            <span id="faq-icon-2">+</span>
+          </button>
+          <div class="faq-answer hidden pb-4 pl-2 text-gray-700">
+            Hackathons, pitch contests, and mentorship sessions.
+          </div>
+        </div>
+        <div class="mb-4 border-b">
+          <button class="w-full text-left py-4 font-semibold text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq(3)">
+            Can I pitch my startup idea?
+            <span id="faq-icon-3">+</span>
+          </button>
+          <div class="faq-answer hidden pb-4 pl-2 text-gray-700">
+            Yes, apply for our incubation program!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 md:px-8" style="background-color: var(--primary-blue);">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-12 text-[var(--neutral-white)]">
+      <div class="md:w-1/2 w-full">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" class="w-full px-4 py-2 rounded bg-white text-gray-900 focus:outline-none"/>
+          <input type="email" placeholder="Email" class="w-full px-4 py-2 rounded bg-white text-gray-900 focus:outline-none"/>
+          <textarea placeholder="Message" class="w-full px-4 py-2 rounded bg-white text-gray-900 focus:outline-none"></textarea>
+          <button type="submit" class="cta-button px-6 py-2 rounded-full font-semibold transition hover:scale-105" style="background-color: var(--accent-orange); color: var(--neutral-white);">
+            Send Message
+          </button>
+        </form>
+        <div class="flex gap-4 mt-6">
+          <a href="#" class="text-2xl hover:scale-110 transition" style="color: #E1306C;"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-2xl hover:scale-110 transition" style="color: #0A66C2;"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-2xl hover:scale-110 transition" style="color: #25D366;"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="text-2xl hover:scale-110 transition" style="color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="mt-4">Email: <a href="mailto:ecell@college.edu" class="underline">ecell@tulas.edu.in</a></p>
+      </div>
+      <div class="md:w-1/2 w-full">
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.277899119454!2d77.88339907518834!3d30.343051074774596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1752740338998!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer border-t border-gray-700 py-8 px-4 md:px-8" style="background-color: var(--neutral-dark-gray); color: var(--neutral-white);">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+      <!-- Left: Logo and Description -->
+      <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-xs gap-3">
+        <img src="logo.png" alt="E-Cell Logo" class="w-14 h-14 mb-2"/>
+        <span class="text-xl font-bold tracking-wide">Tula's Institute E-Cell</span>
+        <p class="text-sm text-gray-300">Empowering students to innovate, build, and launch tomorrow's startups. Join our vibrant entrepreneurial community!</p>
+      </div>
+      <!-- Right: Quick Links and Socials -->
+      <div class="flex flex-col items-center md:items-end gap-4 w-full md:w-auto">
+        <div class="flex flex-wrap gap-4 mb-2">
+          <a href="#about" class="text-gray-300 hover:text-[var(--accent-orange)] font-medium transition">About</a>
+          <a href="#team" class="text-gray-300 hover:text-[var(--accent-orange)] font-medium transition">Team</a>
+          <a href="#gallery" class="text-gray-300 hover:text-[var(--accent-orange)] font-medium transition">Gallery</a>
+          <a href="#faq" class="text-gray-300 hover:text-[var(--accent-orange)] font-medium transition">FAQ</a>
+          <a href="#contact" class="text-gray-300 hover:text-[var(--accent-orange)] font-medium transition">Contact</a>
+        </div>
+        <div class="flex gap-3 mt-2">
+          <a href="#" class="rounded-full bg-gray-800 hover:bg-[var(--accent-orange)] p-2 transition" aria-label="Instagram"><i class="fab fa-instagram text-xl" style="color: #E1306C;"></i></a>
+          <a href="#" class="rounded-full bg-gray-800 hover:bg-[var(--accent-orange)] p-2 transition" aria-label="LinkedIn"><i class="fab fa-linkedin text-xl" style="color: #0A66C2;"></i></a>
+          <a href="#" class="rounded-full bg-gray-800 hover:bg-[var(--accent-orange)] p-2 transition" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl" style="color: #25D366;"></i></a>
+          <a href="#" class="rounded-full bg-gray-800 hover:bg-[var(--accent-orange)] p-2 transition" aria-label="Twitter"><i class="fab fa-twitter text-xl" style="color: #1DA1F2;"></i></a>
+        </div>
+        <p class="text-xs text-gray-400 mt-4">&copy; 2025 Tula's Institute E-Cell. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- FAQ Accordion Script -->
+  <script>
+    function toggleFaq(idx) {
+      const answers = document.querySelectorAll('.faq-answer');
+      const icons = document.querySelectorAll('[id^="faq-icon-"]');
+      answers.forEach((ans, i) => {
+        if (i === idx) {
+          ans.classList.toggle('hidden');
+          icons[i].textContent = ans.classList.contains('hidden') ? '+' : '-';
+        } else {
+          ans.classList.add('hidden');
+          icons[i].textContent = '+';
+        }
+      });
+    }
+  </script>
+  <!-- Fade-in animation -->
+  <style>
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+  <!-- Navbar JS for mobile menu toggle and smooth scroll -->
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navMobile = document.getElementById('nav-mobile');
+    navToggle.addEventListener('click', () => {
+      navMobile.classList.toggle('hidden');
+    });
+    // Close mobile menu on link click
+    navMobile.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.add('hidden');
+      });
+    });
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href.length > 1 && document.querySelector(href)) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Navbar animation on load
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.getElementById('navbar').classList.add('navbar-animate-in');
+      }, 100);
+    });
+    // Navbar shadow/background on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+  </script>
+
+  <!-- Add navbar animation styles -->
+  <style>
+    .navbar-animate-in {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    .navbar-scrolled {
+      box-shadow: 0 4px 24px 0 rgba(30,64,175,0.10), 0 1.5px 4px 0 rgba(0,0,0,0.04);
+      background-color: var(--neutral-white) !important;
+      transition: box-shadow 0.3s, background-color 0.3s;
+    }
+    .nav-link {
+      position: relative;
+      color: var(--primary-blue);
+      transition: color 0.3s;
+      text-decoration: none;
+      padding-bottom: 2px;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--accent-orange);
+      transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--accent-orange);
+    }
+    .nav-link:hover::after,
+    .nav-link:focus::after {
+      width: 100%;
+    }
+  </style>
+</body>
+</html>
